@@ -1,0 +1,8 @@
+# requirements.txt
+
+# Tkinter ist in den meisten Python-Installationen enthalten,
+# aber unter Linux ggf. separat über das System installiert werden.
+# Dieser Platzhalter stellt sicher, dass es dokumentiert ist.
+tk
+
+# Requires Python >= 3.10
