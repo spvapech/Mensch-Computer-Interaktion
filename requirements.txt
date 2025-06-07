@@ -6,3 +6,8 @@
 tk
 
 # Requires Python >= 3.10
+
+
+#Übung 5#
+numpy~=1.26.4
+matplotlib~=3.9.0
