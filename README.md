@@ -40,7 +40,7 @@ Erstellung von zwei Papierprototypen für eine Universitäts-App. Anschließend 
 
 ---
 
-## 🖼🖌️ Übung 4.2  SVG-Grafik – Landschaft bei Nacht
+## 🖌️ Übung 4.2  SVG-Grafik – Landschaft bei Nacht
 
 In dieser Übung soll eine einfache Vektorgrafik im SVG-Format erstellt werden, die eine Landschaft bei Nacht darstellt.
 
