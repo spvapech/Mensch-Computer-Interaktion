@@ -10,14 +10,13 @@ Die Inhalte decken verschiedene Themen der Mensch-Computer-Interaktion ab, darun
 
 - [🧪 Übung 1 & 2 – Fitts's Law GUI + Analyse](#-übung-1--2--fittss-law-gui--analyse)
 - [🖼️ Übung 3 – HiFi-Prototyp](#️-übung-3--hifi-prototyp)
-- [🌳 Übung 4.1 – Green Screen Replacement](#-übung-41--green-screen-replacement)
-- [🖼️ Übung 4.2 – Bildskalierung](#️-übung-42--bildskalierung)
-- [📦 Übung 5.1 – LZSS-Kompression & -Dekompression](#-übung-51--lzss-kompression--dekompression)
-- [🎮 Übung 5.2 – Mario-Spiel mit Körpersteuerung](#-übung-52--mario-spiel-mit-körpersteuerung)
+- [🖼🖌️ Übung 4.2 – SVG-Grafik – Landschaft bei Nacht](#️️-übung-42--svg-grafik--landschaft-bei-nacht)
+- [🌳 Übung 4.3 – Green Screen Replacement](#-übung-43--green-screen-replacement)
+- [🖼️ Übung 4.4 – Bildskalierung](#️-übung-44--bildskalierung)
+- [📦 Übung 4.5 – LZSS-Kompression & -Dekompression](#-übung-45--lzss-kompression--dekompression)
+- [🎮 Übung 5 – Mario-Spiel mit Körpersteuerung](#-übung-5--mario-spiel-mit-körpersteuerung)
 - [⚙️ Installation & Setup](#️-installation--setup)
-- [📥 Installation der Abhängigkeiten](#-installation-der-abhängigkeiten)
 - [📦 requirements.txt](#-requirementstxt)
-
 
 ---
 
@@ -38,9 +37,37 @@ Mit zwei verschiedenen Eingabegeräten (z. B. Maus & Touchpad) wird das Experi
 
 Erstellung von zwei Papierprototypen für eine Universitäts-App. Anschließend wird einer davon mit dem Webtool **Figma** in einen klickbaren HiFi-Prototypen überführt.
 
+
 ---
 
-## 🌳 Übung 4.1 – Green Screen Replacement
+## 🖼🖌️ Übung 4.2  SVG-Grafik – Landschaft bei Nacht
+
+In dieser Übung soll eine einfache Vektorgrafik im SVG-Format erstellt werden, die eine Landschaft bei Nacht darstellt.
+
+Die Grafik muss ausschließlich mit Standard-SVG-Formen (z. B. rect, circle, ellipse, line, polygon, path) umgesetzt werden.
+
+Anforderungen – folgende Elemente müssen enthalten sein:
+🌌 Dunkler Nachthimmel
+
+☁️ Eine Wolke
+
+🌙 Ein sichelförmiger Mond
+
+🌍 Ein Bodenbereich
+
+🌳 Mindestens ein Baum
+
+🏠 Ein Haus mit:
+
+einer Tür
+
+zwei Fenstern
+
+einem Spitzdach
+
+---
+
+## 🌳 Übung 4.3 – Green Screen Replacement
 
 Ein Bild mit Greenscreen wird eingelesen und der grüne Hintergrund entfernt, anschließend durch ein Waldbild ersetzt.
 
@@ -53,7 +80,7 @@ Nur `numpy` und `matplotlib` erlaubt – keine OpenCV-Tools.
 
 ---
 
-## 🖼️ Übung 4.2 – Bildskalierung
+## 🖼️ Übung 4.4 – Bildskalierung
 
 Implementierung zweier Algorithmen zur Skalierung eines Bitmap-Bilds:
 
@@ -64,7 +91,7 @@ Das Skript `main.py` lädt ein Bild (`pixel.bmp`), wendet beide Verfahren an und
 
 ---
 
-## 📦 Übung 5.1 – LZSS-Kompression & -Dekompression
+## 📦 Übung 4.5 – LZSS-Kompression & -Dekompression
 
 Implementierung des **LZSS-Kompressionsalgorithmus** (Variante von LZ77):
 
@@ -76,7 +103,7 @@ Ziel: Binärkompression ohne externe Bibliotheken (reines Python).
 
 ---
 
-## 🎮 Übung 5.2 – Mario-Spiel mit Körpersteuerung
+## 🎮 Übung 5 – Mario-Spiel mit Körpersteuerung
 
 Ein modifiziertes Super Mario-Spiel wird mit Gesten über Webcam gesteuert. Steuerung durch Bewegung von Kopf, Händen oder Füßen – abhängig von der **letzten Ziffer deiner Matrikelnummer**.
 
