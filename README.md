@@ -8,15 +8,16 @@ Die Inhalte decken verschiedene Themen der Mensch-Computer-Interaktion ab, darun
 
 ## 📚 Inhaltsverzeichnis
 
-- [🧪 Übung 1 & 2 – Fitts's Law GUI + Analyse](#-übung-1--2--fittss-law-gui--analyse)
-- [🖼️ Übung 3 – HiFi-Prototyp](#️-übung-3--hifi-prototyp)
-- [🖼🖌️ Übung 4.2 – SVG-Grafik – Landschaft bei Nacht](#️️-übung-42--svg-grafik--landschaft-bei-nacht)
-- [🌳 Übung 4.3 – Green Screen Replacement](#-übung-43--green-screen-replacement)
-- [🖼️ Übung 4.4 – Bildskalierung](#️-übung-44--bildskalierung)
-- [📦 Übung 4.5 – LZSS-Kompression & -Dekompression](#-übung-45--lzss-kompression--dekompression)
-- [🎮 Übung 5 – Mario-Spiel mit Körpersteuerung](#-übung-5--mario-spiel-mit-körpersteuerung)
-- [⚙️ Installation & Setup](#️-installation--setup)
-- [📦 requirements.txt](#-requirementstxt)
+- [🧪 Übung 1 & 2 – Fitts's Law GUI + Analyse](#-übung-1--2--fittss-law-gui--analyse)  
+- [🖼️ Übung 3 – HiFi-Prototyp](#️-übung-3--hifi-prototyp)  
+- [🖌️ Übung 4.2 – SVG-Grafik – Landschaft bei Nacht](#️️-übung-42--svg-grafik--landschaft-bei-nacht)  
+- [🌳 Übung 4.3 – Green Screen Replacement](#-übung-43--green-screen-replacement)  
+- [🖼️ Übung 4.4 – Bildskalierung](#️-übung-44--bildskalierung)  
+- [📦 Übung 4.5 – LZSS-Kompression & -Dekompression](#-übung-45--lzss-kompression--dekompression)  
+- [🎮 Übung 5 – Mario-Spiel mit Körpersteuerung](#-übung-5--mario-spiel-mit-körpersteuerung)  
+- [📊 Übung 6 – Boxplot Eingabegeräte](#-übung-6--boxplot-eingabegeräte)  
+- [⚙️ Installation & Setup](#️-installation--setup)  
+- [📦 requirements.txt](#-requirementstxt)  
 
 ---
 
@@ -117,21 +118,41 @@ Ein modifiziertes Super Mario-Spiel wird mit Gesten über Webcam gesteuert. Steu
 - `post_action(Action.LEFT / RIGHT / JUMP)`
 - `Action.*_STOP` zum Beenden der Aktion
 
-Verwendet: `OpenCV`, `mediapipe`, `pygame`, `PyTMX`
+Verwendet: `OpenCV`, `mediapipe`, `pygame`, `PyTMX`  
 
 ---
 
-## ⚙️ Installation & Setup
+## 📊 Übung 6 – Boxplot Eingabegeräte  
 
-### Voraussetzungen
+In dieser Übung werden die Messwerte zweier Eingabegeräte simuliert und mithilfe eines **Boxplots** visualisiert. Dadurch lassen sich Median, Quartile, Streuung und Ausreißer beider Verteilungen direkt vergleichen.  
 
-- Python **3.10+**
-- Virtuelle Umgebung empfohlen:
+### Umsetzung  
+- Für jedes Gerät werden 100 Zufallswerte aus einer Normalverteilung erzeugt:  
+  - **Eingabegerät 1**: Mittelwert 50, Standardabweichung 10  
+  - **Eingabegerät 2**: Mittelwert 55, Standardabweichung 15  
+- Die Daten werden mit `matplotlib` in einem Boxplot dargestellt.  
+- Die Grafik wird als PNG-Datei unter dem Namen `boxplot_eingabegeraete.png` gespeichert.  
+
+### Ziel  
+- Visueller Vergleich der beiden Eingabegeräte in Bezug auf Verteilung, Streuung und Ausreißer.  
+
+### Ergebnis  
+Ausgabe einer Boxplot-Grafik:  
+- X-Achse: Eingabegeräte  
+- Y-Achse: Messwerte  
+
+---
+
+## ⚙️ Installation & Setup  
+
+### Voraussetzungen  
+- Python **3.10+**  
+- Virtuelle Umgebung empfohlen:  
 
 ```bash
-
 python -m venv venv
 source venv/bin/activate  # Unter Windows: venv\Scripts\activate
+```  
 
 ````
 ---
